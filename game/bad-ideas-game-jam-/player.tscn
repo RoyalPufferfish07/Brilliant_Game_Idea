@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b05whumx01mnk"]
+
+[ext_resource type="Script" uid="uid://c5rd2cw2b2k4f" path="res://player.gd" id="1_4flbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
+size = Vector2(64, 64)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sh265"]
+size = Vector3(64, 64, 1)
+
+[node name="Player" type="CharacterBody2D" unique_id=79368993]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=507651167]
+shape = SubResource("RectangleShape2D_sh265")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=2115986607]
+modulate = Color(0, 0.23529412, 1, 1)
+mesh = SubResource("BoxMesh_sh265")

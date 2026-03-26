@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bhod6h8783q3m"]
+
+[ext_resource type="Texture2D" uid="uid://d2eqkhyf0404q" path="res://Play_Unpressed.png" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://byl5s81bhs1xd" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://duxpslegdp8bn" path="res://Play_Pressed.png" id="2_fu7sn"]
+
+[node name="Main Menu" type="Control" unique_id=831821412]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fu7sn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1198401614]
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 650.0
+color = Color(0.5882353, 0.25882354, 0.19607843, 1)
+
+[node name="Play" type="TextureButton" parent="." unique_id=536355199]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 252.0
+offset_right = 782.0
+offset_bottom = 432.0
+texture_normal = ExtResource("1_7vrkn")
+texture_pressed = ExtResource("2_fu7sn")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
