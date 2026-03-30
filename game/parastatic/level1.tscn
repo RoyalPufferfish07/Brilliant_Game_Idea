@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://pd23dx4k5bh8" path="res://SBS - Seamless Space Backgrounds - Large 1024x1024/Large 1024x1024/Blue Nebula/Blue_Nebula_07-1024x1024.png" id="5_ryrav"]
 [ext_resource type="PackedScene" uid="uid://bevpe4wcm5pri" path="res://spawner.tscn" id="6_ryrav"]
 
-[node name="Game" type="Node2D" unique_id=1513373445]
+[node name="Level 1" type="Node2D" unique_id=1513373445]
 
 [node name="BlueNebula071024x1024" type="Sprite2D" parent="." unique_id=1430577192]
 texture = ExtResource("5_ryrav")

@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var progress_bar: ProgressBar = $"User Interface/ProgressBar"
+@onready var progress_bar: TextureProgressBar = $"User Interface/ProgressBar"
 @onready var antiodote_timer_label: Label = $"User Interface/AntiodoteTimerLabel"
 @onready var antidote_timer: Timer = $AntidoteTimer
 

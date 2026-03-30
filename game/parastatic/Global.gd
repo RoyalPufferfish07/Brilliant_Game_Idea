@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if !dead:
 		hunger -= starvation
-		print(hunger)
+		#print(hunger)
 	if hunger > 100 and hunger_limit:
 		hunger = 100
 	if hunger <= 0:
@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		hunger = 100
 	if Global.confused:
-		get_tree().create_timer(0.25).timeout.connect(refresh)
+		get_tree().create_timer(0.5).timeout.connect(refresh)
 	if win:
 		get_tree().change_scene_to_file("res://win.tscn")
 func refresh():

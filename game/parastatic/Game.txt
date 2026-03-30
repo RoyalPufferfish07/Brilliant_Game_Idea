@@ -9,3 +9,8 @@ Borrowed/Temporary Assets:
 	Hunger_Icon - its from dont starve
 	Tileset - it has a licencse that says i can use - https://trevor-pupkin.itch.io/tech-dungeon-roguelite
 	Background - it has a licencse that says i can use - https://screamingbrainstudios.itch.io/seamless-space-backgrounds
+
+Do main menu:
+	Custom texture for play button
+
+Figure out title

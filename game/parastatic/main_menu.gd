@@ -15,4 +15,4 @@ func _process(delta: float) -> void:
 
 func _on_play_button_pressed() -> void:
 	Global.dead = false
-	get_tree().change_scene_to_file("res://game.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://level1.tscn") # Replace with function body.

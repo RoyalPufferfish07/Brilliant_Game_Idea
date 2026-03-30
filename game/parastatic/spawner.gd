@@ -13,7 +13,7 @@ func _ready() -> void:
 		were_will_spawn()
 		spawn()
 		i += 1
-		print("LOOP" + str(i) )
+		#print("LOOP" + str(i) )
  # Replace with function body.
 
 
