@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duxpslegdp8bn"
-path="res://.godot/imported/Play_Pressed.png-221a55adbe55de4bc9bb8727e4b4ee9d.ctex"
+uid="uid://balrqe0nyo3ni"
+path="res://.godot/imported/parasite.png-472a4484bd13ef96e4f22cab22b38b2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Play_Pressed.png"
-dest_files=["res://.godot/imported/Play_Pressed.png-221a55adbe55de4bc9bb8727e4b4ee9d.ctex"]
+source_file="res://parasite.png"
+dest_files=["res://.godot/imported/parasite.png-472a4484bd13ef96e4f22cab22b38b2a.ctex"]
 
 [params]
 

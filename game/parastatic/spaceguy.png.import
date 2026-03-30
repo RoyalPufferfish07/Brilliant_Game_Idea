@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2eqkhyf0404q"
-path="res://.godot/imported/Play_Unpressed.png-df80eca8690efaabb12ceac48ac9d0c6.ctex"
+uid="uid://dkvl412js2vc4"
+path="res://.godot/imported/spaceguy.png-f34611d5b8a068053eda5f7134ebd440.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Play_Unpressed.png"
-dest_files=["res://.godot/imported/Play_Unpressed.png-df80eca8690efaabb12ceac48ac9d0c6.ctex"]
+source_file="res://spaceguy.png"
+dest_files=["res://.godot/imported/spaceguy.png-f34611d5b8a068053eda5f7134ebd440.ctex"]
 
 [params]
 

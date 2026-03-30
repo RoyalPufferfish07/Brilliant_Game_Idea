@@ -1,0 +1,6 @@
+The Core Mechanic:
+	Starve
+	Pick up the "Food" to survive
+Complementary Mechanic:
+	Bad food
+	Certain food confuses you - you will know what food will confuse you
