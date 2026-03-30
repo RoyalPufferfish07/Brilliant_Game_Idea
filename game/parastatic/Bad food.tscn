@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://mktu5xe5tead"]
 
 [ext_resource type="Script" uid="uid://cqy5q3ow11lw3" path="res://bad_food.gd" id="1_rhtqy"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_8txok"]
-radius = 16.0
-height = 32.0
+[ext_resource type="Texture2D" uid="uid://balrqe0nyo3ni" path="res://parasite.png" id="2_7xldw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8txok"]
 radius = 16.0
@@ -12,11 +9,11 @@ radius = 16.0
 [node name="Bad Food" type="Area2D" unique_id=1475674519]
 script = ExtResource("1_rhtqy")
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1355781418]
-modulate = Color(0, 0, 1, 1)
-mesh = SubResource("SphereMesh_8txok")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110575975]
 shape = SubResource("CircleShape2D_8txok")
+
+[node name="Parasite" type="Sprite2D" parent="." unique_id=1736517742]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("2_7xldw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

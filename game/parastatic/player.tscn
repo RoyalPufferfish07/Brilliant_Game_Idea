@@ -17,5 +17,6 @@ texture = ExtResource("1_4flbx")
 shape = SubResource("CircleShape2D_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=975924716]
+zoom = Vector2(2, 2)
 
 [node name="User Interface" parent="Camera2D" unique_id=90909460 instance=ExtResource("3_i3pqv")]

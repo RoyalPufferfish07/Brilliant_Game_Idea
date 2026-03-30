@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dhksa3iswp86w"]
+
+[node name="Win" type="Node2D" unique_id=905508825]
+
+[node name="Label" type="Label" parent="." unique_id=218990294]
+offset_left = 500.0
+offset_top = 266.0
+offset_right = 602.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 50
+text = "WIN"
