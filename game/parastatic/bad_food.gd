@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		Global.hunger += 55
+		#Global.hunger += 25
 		Global.confused = true
 		body.apply_shake()
 		queue_free()# Replace with function body.

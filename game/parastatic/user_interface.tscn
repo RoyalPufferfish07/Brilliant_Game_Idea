@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://h2coyobn4gwm" path="res://user_interface.gd" id="1_kxhmu"]
 [ext_resource type="Texture2D" uid="uid://balrqe0nyo3ni" path="res://parasite.png" id="2_i7dvk"]
-[ext_resource type="Texture2D" uid="uid://b2nv5f3kny20q" path="res://Temporary_Hunger_Icon.png" id="3_juc2q"]
+[ext_resource type="Texture2D" uid="uid://d38jmo0gn3d8l" path="res://Flask.png" id="3_0jl8t"]
+[ext_resource type="Texture2D" uid="uid://i7oyr004f02r" path="res://Logo_Background.png" id="3_r3lf1"]
 [ext_resource type="Texture2D" uid="uid://dtjnsj52yfodo" path="res://Hunger_Icon.png" id="4_0jl8t"]
-[ext_resource type="Texture2D" uid="uid://b8ptc1hmk335j" path="res://Hunger_bar.png" id="4_r3lf1"]
+[ext_resource type="Texture2D" uid="uid://r5xvxw1kau7c" path="res://Chemicals.png" id="4_up53h"]
 
 [node name="User Interface" type="CanvasLayer" unique_id=44292696]
 script = ExtResource("1_kxhmu")
@@ -23,18 +24,23 @@ layout_mode = 0
 offset_right = 299.0
 offset_bottom = 27.0
 value = 100.0
-texture_progress = ExtResource("4_r3lf1")
+fill_mode = 3
+texture_progress = ExtResource("4_0jl8t")
 
-[node name="AntiodoteTimerLabel" type="Label" parent="User Interface" unique_id=954825782]
+[node name="AntiodoteTimerLabel" type="TextureProgressBar" parent="User Interface" unique_id=1368929717]
 layout_mode = 0
-offset_left = 447.0
+offset_left = 544.0
 offset_top = 5.0
-offset_right = 487.0
-offset_bottom = 28.0
-theme_override_font_sizes/font_size = 50
+offset_right = 608.0
+offset_bottom = 74.0
+value = 100.0
+fill_mode = 3
+texture_under = ExtResource("3_r3lf1")
+texture_over = ExtResource("3_0jl8t")
+texture_progress = ExtResource("4_up53h")
 
 [node name="AntidoteTimer" type="Timer" parent="." unique_id=824063409]
-wait_time = 10.0
+wait_time = 15.0
 one_shot = true
 autostart = true
 
@@ -43,12 +49,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(287, 13)
 texture = ExtResource("2_i7dvk")
-
-[node name="TemporaryHungerIcon" type="Sprite2D" parent="." unique_id=319176190]
-visible = false
-position = Vector2(321, 16)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_juc2q")
 
 [node name="HungerIcon" type="Sprite2D" parent="." unique_id=156654327]
 visible = false

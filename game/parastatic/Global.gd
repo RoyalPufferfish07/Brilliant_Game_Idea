@@ -6,9 +6,15 @@ var dead = true
 @export var starvation = 0.1
 var confused = false
 var hunger_limit = true
+var timer = Timer.new()
+var start = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	
+	timer.wait_time = 1.0
+	timer.one_shot = true
+	add_child(timer)
+	timer.timeout.connect(refresh)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -19,13 +25,15 @@ func _process(delta: float) -> void:
 	if hunger > 100 and hunger_limit:
 		hunger = 100
 	if hunger <= 0:
-		print("dead")
+		#print("dead")
 		dead = true
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		hunger = 100
-	if Global.confused:
-		get_tree().create_timer(0.5).timeout.connect(refresh)
+	if Global.confused and !start:
+		timer.start()
+		start = true
 	if win:
 		get_tree().change_scene_to_file("res://win.tscn")
 func refresh():
+	start = false
 	confused = false
