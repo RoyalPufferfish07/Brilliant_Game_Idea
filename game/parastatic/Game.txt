@@ -5,14 +5,15 @@ Complementary Mechanic:
 	Bad food
 	Certain food confuses you - you will know what food will confuse you
 
+The game is you are a lone survivor who was infected with a virus named put_name_here that eats away your stomach and you must feed it before running out of food/ starving to death because the virus eat your stomach away
+
+
 Borrowed/Temporary Assets:
-	Hunger_Icon - its from dont starve
 	Tileset - it has a licencse that says i can use - https://trevor-pupkin.itch.io/tech-dungeon-roguelite
 	Background - it has a licencse that says i can use - https://screamingbrainstudios.itch.io/seamless-space-backgrounds
-
+	Character - https://dizabanik.itch.io/pixelastronaut
 This game has no obstacle - ADD OBSTACLE:
 	Pokemon Stadium Mini-game - Sushi-Go-Round - the spicy food mechanic - it does not work in this game that i making cause the food items dont require precisons like the lick a tung tung mechanic
-	
 
 Get rid of stolen stuff:
 	Tileset
@@ -27,4 +28,7 @@ Wat is the player doing:
 What stopping them
 	Paryalsis food
 Why are they doing it
-	To survive and beat the timer
+	To survive and beat the timer - redo this****** PLS
+	Possible:
+		
+		

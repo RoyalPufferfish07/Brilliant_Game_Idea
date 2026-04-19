@@ -28,6 +28,7 @@ fill_mode = 3
 texture_progress = ExtResource("4_0jl8t")
 
 [node name="AntiodoteTimerLabel" type="TextureProgressBar" parent="User Interface" unique_id=1368929717]
+visible = false
 layout_mode = 0
 offset_left = 544.0
 offset_top = 5.0
