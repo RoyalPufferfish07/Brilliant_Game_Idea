@@ -1,4 +1,5 @@
 extends Node
+
 var level_str = "res://level_"
 var t = ".tscn"
 var win = false
@@ -11,6 +12,9 @@ var timer = Timer.new()
 var start = false
 var level_index = 1
 var replinish = false
+var starving = false
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	
@@ -20,9 +24,10 @@ func _ready() -> void:
 	timer.timeout.connect(refresh)
 
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if !dead:
+	if !dead and !win:
 		hunger -= starvation
 		#print(hunger)
 	if hunger > 100 and hunger_limit:
@@ -30,14 +35,10 @@ func _process(delta: float) -> void:
 	if hunger <= 0:
 		#print("dead")
 		dead = true
-		get_tree().call_deferred("change_scene_to_file", level_str + str(Scenemanager.index)+t)
 		reset_hunger()
 	if Global.confused and !start:
 		timer.start()
 		start = true
-	if win:
-		Scenemanager.index = 1
-		get_tree().change_scene_to_file("res://win.tscn")
 
 func refresh():
 	start = false

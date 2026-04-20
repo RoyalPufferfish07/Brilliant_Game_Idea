@@ -4,11 +4,14 @@ extends CanvasLayer
 @onready var antiodote_timer_label: TextureProgressBar = $"User Interface/AntiodoteTimerLabel"
 @onready var antidote_timer: Timer = $AntidoteTimer
 var start = false
+@onready var win: Control = $Win
+@onready var restart: Control = $Restart
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$GreenOutline.visible = false
-
+	win.visible = false
+	restart.visible = false
 	$Green.visible = false # Replace with function body.
 
 
@@ -25,7 +28,10 @@ func _process(delta: float) -> void:
 	#var rounded_time = round(antidote_timer.time_left * 10) / 10
 	#antiodote_timer_label.value = (15-antidote_timer.time_left)*7
 	#print(antiodote_timer_label.value)
-
+	if Global.dead:
+		restart.visible = true
+	if Global.win:
+		win.visible = true
 
 func _on_antidote_timer_timeout() -> void:
 	#Global.win = true # Replace with function body.

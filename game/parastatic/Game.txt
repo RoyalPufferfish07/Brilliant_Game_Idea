@@ -36,3 +36,6 @@ Why are they doing it
 		
 The Gameloop:
 	Entry: 
+If i were to improve this i would/ stuff i wont do right now in the project-can do if i wanna work on it more than just completing it:
+	Your Hunger starts when you move instead of needing a menu to restart the level you just decide when you start the level by moving
+	

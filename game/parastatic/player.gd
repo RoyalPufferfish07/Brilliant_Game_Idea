@@ -9,7 +9,6 @@ var shake_strength = 0
 @onready var spaceguy: AnimatedSprite2D = $AnimatedSprite2D
 func _ready() -> void:
 	Global.dead = false
-
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Debug"):
 		Global.hunger = 10000000000000000
