@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://lvhrlwjxylg2"]
 
 [ext_resource type="Script" uid="uid://b5ov3ilnqj370" path="res://goal.gd" id="1_6k3qi"]
+[ext_resource type="Texture2D" uid="uid://c7yxx6fkmdvv7" path="res://star.png" id="2_0qle8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7sh37"]
 radius = 32.0
@@ -16,7 +17,12 @@ script = ExtResource("1_6k3qi")
 shape = SubResource("CircleShape2D_7sh37")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1906146575]
+visible = false
 modulate = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 mesh = SubResource("SphereMesh_7sh37")
+
+[node name="Star" type="Sprite2D" parent="." unique_id=263796946]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0qle8")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -19,6 +19,7 @@ config/icon="uid://ds3qyytewnf0k"
 [autoload]
 
 Global="*uid://c5ptnfnw1nvuc"
+Scenemanager="*uid://04ogw3gwy623"
 
 [input]
 

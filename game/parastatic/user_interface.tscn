@@ -7,8 +7,24 @@
 [ext_resource type="Texture2D" uid="uid://dtjnsj52yfodo" path="res://Hunger_Icon.png" id="4_0jl8t"]
 [ext_resource type="Texture2D" uid="uid://r5xvxw1kau7c" path="res://Chemicals.png" id="4_up53h"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_r3lf1"]
+size = Vector3(64, 64, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hsgek"]
+size = Vector3(1152, 648, 1)
+
 [node name="User Interface" type="CanvasLayer" unique_id=44292696]
 script = ExtResource("1_kxhmu")
+
+[node name="Green" type="MeshInstance2D" parent="." unique_id=124875743]
+modulate = Color(0, 1, 0, 0.13333334)
+position = Vector2(34, 34)
+mesh = SubResource("BoxMesh_r3lf1")
+
+[node name="GreenOutline" type="MeshInstance2D" parent="." unique_id=777633926]
+modulate = Color(0, 1, 0, 0.03137255)
+position = Vector2(576, 324)
+mesh = SubResource("BoxMesh_hsgek")
 
 [node name="User Interface" type="Control" parent="." unique_id=90909460]
 layout_mode = 3

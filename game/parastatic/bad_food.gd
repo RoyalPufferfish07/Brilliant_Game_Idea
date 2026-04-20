@@ -18,6 +18,7 @@ func _on_body_entered(body: Node2D) -> void:
 		cpu_particles_2d.emitting = true
 		$CollisionShape2D.disabled = true
 		$Parasite.visible = false
+		Global.replinish = true
 		body.apply_shake()
 		await get_tree().create_timer(0.5).timeout
 		queue_free()# Replace with function body.

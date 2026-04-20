@@ -18,5 +18,6 @@ func _on_body_entered(body: Node2D) -> void:
 		$CollisionShape2D.disabled = true
 		$Parasite.visible = false
 		Global.hunger += 50 
+		Global.replinish = true
 		await get_tree().create_timer(0.5).timeout
 		queue_free()# Replace with function body.

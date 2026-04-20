@@ -12,6 +12,8 @@ Borrowed/Temporary Assets:
 	Tileset - it has a licencse that says i can use - https://trevor-pupkin.itch.io/tech-dungeon-roguelite
 	Background - it has a licencse that says i can use - https://screamingbrainstudios.itch.io/seamless-space-backgrounds
 	Character - https://dizabanik.itch.io/pixelastronaut
+	Key - https://drxwat.itch.io/pixel-art-key
+	Padlock - https://karsiori.itch.io/pixel-art-padlock-pack-animated
 This game has no obstacle - ADD OBSTACLE:
 	Pokemon Stadium Mini-game - Sushi-Go-Round - the spicy food mechanic - it does not work in this game that i making cause the food items dont require precisons like the lick a tung tung mechanic
 
@@ -30,5 +32,7 @@ What stopping them
 Why are they doing it
 	To survive and beat the timer - redo this****** PLS
 	Possible:
+		Get to Goal/Level complete
 		
-		
+The Gameloop:
+	Entry: 
