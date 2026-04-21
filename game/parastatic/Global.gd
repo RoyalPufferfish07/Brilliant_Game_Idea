@@ -13,7 +13,7 @@ var start = false
 var level_index = 1
 var replinish = false
 var starving = false
-
+var complete = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,7 +27,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if !dead and !win:
+	if !dead and !win and !complete:
 		hunger -= starvation
 		#print(hunger)
 	if hunger > 100 and hunger_limit:

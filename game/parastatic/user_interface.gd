@@ -6,14 +6,16 @@ extends CanvasLayer
 var start = false
 @onready var win: Control = $Win
 @onready var restart: Control = $Restart
+@onready var level_complete: Control = $"Level Complete"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$GreenOutline.visible = false
 	win.visible = false
 	restart.visible = false
+	level_complete.visible = false
 	$Green.visible = false # Replace with function body.
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -32,6 +34,8 @@ func _process(delta: float) -> void:
 		restart.visible = true
 	if Global.win:
 		win.visible = true
+	if Global.complete:
+		level_complete.visible = true
 
 func _on_antidote_timer_timeout() -> void:
 	#Global.win = true # Replace with function body.

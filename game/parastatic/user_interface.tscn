@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://r5xvxw1kau7c" path="res://Chemicals.png" id="4_up53h"]
 [ext_resource type="PackedScene" uid="uid://dhksa3iswp86w" path="res://win.tscn" id="7_hsgek"]
 [ext_resource type="PackedScene" uid="uid://dpib4nda0qnth" path="res://restart.tscn" id="8_f4522"]
+[ext_resource type="PackedScene" uid="uid://bj2uwjed16mok" path="res://level_complete.tscn" id="9_q287o"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_r3lf1"]
 size = Vector3(64, 64, 1)
@@ -75,6 +76,9 @@ position = Vector2(293, 31)
 texture = ExtResource("4_0jl8t")
 
 [node name="Restart" parent="." unique_id=280528562 instance=ExtResource("8_f4522")]
+visible = false
+
+[node name="Level Complete" parent="." unique_id=1865045452 instance=ExtResource("9_q287o")]
 visible = false
 
 [node name="Win" parent="." unique_id=839225530 instance=ExtResource("7_hsgek")]
