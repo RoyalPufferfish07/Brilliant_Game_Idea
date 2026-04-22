@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dpib4nda0qnth"]
 
 [ext_resource type="Script" uid="uid://1np6l544od4v" path="res://restart.gd" id="1_k56u2"]
+[ext_resource type="AudioStream" uid="uid://dib0flmgbn3ol" path="res://sound (2),sound (1),sound/sound (5).mp3" id="2_gkhr7"]
 
 [node name="Restart" type="Control" unique_id=839225530]
 layout_mode = 3
@@ -36,5 +37,8 @@ offset_bottom = 377.0
 theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "Restart"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=1684594949]
+stream = ExtResource("2_gkhr7")
 
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

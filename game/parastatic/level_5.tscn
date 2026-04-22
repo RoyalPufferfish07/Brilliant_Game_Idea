@@ -9,7 +9,6 @@
 [node name="Level 5" type="Node2D" unique_id=1513373445]
 
 [node name="BG" type="Sprite2D" parent="." unique_id=1430577192]
-visible = false
 texture = ExtResource("1_8ons7")
 
 [node name="TileMap" parent="." unique_id=219190614 instance=ExtResource("2_tac4s")]

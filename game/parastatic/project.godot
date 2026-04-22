@@ -13,7 +13,6 @@ config_version=5
 config/name="Parasatic"
 run/main_scene="uid://bq0hsm2mhdve8"
 config/features=PackedStringArray("4.6", "Forward Plus")
-boot_splash/image="uid://cr2hx55ui54o8"
 config/icon="uid://ds3qyytewnf0k"
 
 [autoload]

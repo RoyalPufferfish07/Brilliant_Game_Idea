@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cqy5q3ow11lw3" path="res://bad_food.gd" id="1_rhtqy"]
 [ext_resource type="Texture2D" uid="uid://balrqe0nyo3ni" path="res://parasite.png" id="2_7xldw"]
+[ext_resource type="AudioStream" uid="uid://cgs08hjo5ffdi" path="res://sound (2),sound (1),sound/sound (1).mp3" id="3_vlu24"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8txok"]
 radius = 16.0
@@ -29,5 +30,8 @@ angle_max = 720.0
 scale_amount_min = 2.5
 scale_amount_max = 3.0
 color = Color(1, 0, 0, 1)
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=122813644]
+stream = ExtResource("3_vlu24")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

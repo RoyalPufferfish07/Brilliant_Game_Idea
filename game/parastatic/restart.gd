@@ -1,5 +1,6 @@
 extends Control
-
+@onready var sfx: AudioStreamPlayer2D = $SFX
+var v = false
 var level_str = "res://level_"
 var t = ".tscn"
 # Called when the node enters the scene tree for the first time.
@@ -9,7 +10,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if visible and !v:
+		v = true
+		sfx.play()
+	if !visible and v:
+		v = false
 
 
 func _on_restart_pressed() -> void:

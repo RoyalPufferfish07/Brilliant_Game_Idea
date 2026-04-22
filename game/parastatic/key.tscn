@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b1ipku6pw0lkn" path="res://key.gd" id="1_up4cr"]
 [ext_resource type="Texture2D" uid="uid://drxhrypeibbyq" path="res://pixel-art-key/key-white.png" id="2_p0yg6"]
+[ext_resource type="AudioStream" uid="uid://c2xw1l38yq5rx" path="res://sound (2),sound (1),sound/sound.mp3" id="3_krfvd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_up4cr"]
 size = Vector3(8, 8, 1)
@@ -115,5 +116,9 @@ shape = SubResource("CircleShape2D_up4cr")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=270287257]
 sprite_frames = SubResource("SpriteFrames_4hxpy")
 autoplay = "default"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=2076795390]
+stream = ExtResource("3_krfvd")
+volume_db = -10.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

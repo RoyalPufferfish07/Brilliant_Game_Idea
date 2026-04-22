@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dhksa3iswp86w"]
 
 [ext_resource type="Script" uid="uid://bhwi7lqnu6vuy" path="res://win.gd" id="1_wao2c"]
+[ext_resource type="AudioStream" uid="uid://dh5usvvnxurcj" path="res://sound (2),sound (1),sound/sound (3).mp3" id="2_hgi8f"]
 
 [node name="Win" type="Control" unique_id=839225530]
 layout_mode = 3
@@ -35,5 +36,8 @@ offset_right = 711.0
 offset_bottom = 377.0
 theme_override_font_sizes/font_size = 50
 text = "Title Screen"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=1770179020]
+stream = ExtResource("2_hgi8f")
 
 [connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
