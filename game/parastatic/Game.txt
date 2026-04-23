@@ -14,6 +14,8 @@ Borrowed/Temporary Assets:
 	Character - https://dizabanik.itch.io/pixelastronaut
 	Key - https://drxwat.itch.io/pixel-art-key
 	Padlock - https://karsiori.itch.io/pixel-art-padlock-pack-animated
+	Music - https://jjbbllkk.itch.io/helios-dreams
+	Font - https://ggbot.itch.io/y224-font
 This game has no obstacle - ADD OBSTACLE:
 	Pokemon Stadium Mini-game - Sushi-Go-Round - the spicy food mechanic - it does not work in this game that i making cause the food items dont require precisons like the lick a tung tung mechanic
 
@@ -39,3 +41,11 @@ The Gameloop:
 If i were to improve this i would/ stuff i wont do right now in the project-can do if i wanna work on it more than just completing it:
 	Your Hunger starts when you move instead of needing a menu to restart the level you just decide when you start the level by moving
 	
+Title:
+	Tapeworm
+	Stomach Worm
+	Parasite
+	I have a Parasite
+	Starving
+	Racing Hunger
+	End Of World Hunger

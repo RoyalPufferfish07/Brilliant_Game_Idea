@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Parasatic"
+config/name="Racing Hunger"
 run/main_scene="uid://bq0hsm2mhdve8"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://ds3qyytewnf0k"
@@ -19,6 +19,7 @@ config/icon="uid://ds3qyytewnf0k"
 
 Global="*uid://c5ptnfnw1nvuc"
 Scenemanager="*uid://04ogw3gwy623"
+Music="*uid://bgnomsnldyeig"
 
 [input]
 
@@ -56,3 +57,4 @@ Debug={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+viewport/transparent_background=true

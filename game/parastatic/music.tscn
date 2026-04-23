@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bgnomsnldyeig"]
+
+[ext_resource type="AudioStream" uid="uid://n32qhq4y5md" path="res://Jeremy Blake - Helios-s Dreams - mp3/01 Ancient- Towering- Mysterious.mp3" id="1_3h6ak"]
+
+[node name="Music" type="AudioStreamPlayer" unique_id=1761097388]
+stream = ExtResource("1_3h6ak")
+autoplay = true

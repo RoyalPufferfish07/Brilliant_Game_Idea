@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccoyod5i2lnom"
+path="res://.godot/imported/09 Panic Mode.mp3-5ff762966f0d73b0f39a12ce4377b9a6.mp3str"
+
+[deps]
+
+source_file="res://Jeremy Blake - Helios-s Dreams - mp3/09 Panic Mode.mp3"
+dest_files=["res://.godot/imported/09 Panic Mode.mp3-5ff762966f0d73b0f39a12ce4377b9a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
